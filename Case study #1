@@ -1,6 +1,6 @@
 https://8weeksqlchallenge.com/case-study-1/
 --1. What is the total amount each customer spent at the restaurant?
-  
+````sql
   SELECT
   	S.customer_id AS "Customer Name", SUM(M.price) AS "Total Spent"
    		FROM sales S
@@ -8,3 +8,4 @@ https://8weeksqlchallenge.com/case-study-1/
  	  ON S.product_id = M.product_id
    GROUP BY S.customer_id
    ORDER BY S.customer_id ASC;
+````
